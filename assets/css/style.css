@@ -1,0 +1,27 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1% 4%;
+
+  background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #6163eb 0%,
+    #16189d 52%,
+    #0c0d75 90%
+  );
+}
+
+.dashboard-title {
+  text-align: center;
+  font-family: "Righteous", sans-serif;
+  font-size: 50px;
+  color: white;
+}
