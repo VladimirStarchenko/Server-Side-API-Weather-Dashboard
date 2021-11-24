@@ -21,7 +21,40 @@ header {
 
 .dashboard-title {
   text-align: center;
-  font-family: "Righteous", sans-serif;
   font-size: 50px;
   color: white;
+}
+
+.navigation {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 25px;
+}
+.search-bar {
+  display: grid;
+  height: 40px;
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.search-button {
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  background-color: lightskyblue;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.search-button:hover {
+  background-color: thistle;
+}
+@media screen and (max-width: 375px) {
+  .search-bar {
+    width: 100%;
+  }
 }
