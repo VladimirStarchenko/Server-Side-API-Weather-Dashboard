@@ -5,6 +5,8 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header {
@@ -30,7 +32,14 @@ header {
   margin: 0 40px;
   font-size: 25px;
 }
+.weather-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .search-bar {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   display: grid;
   height: 40px;
   font-size: 20px;
@@ -53,8 +62,89 @@ header {
 .search-button:hover {
   background-color: thistle;
 }
+
+.current-weather {
+  flex-grow: 1;
+}
+
+.content-box {
+  background-color: lightskyblue;
+  font-size: 25px;
+  margin-top: 80px;
+  width: 90%;
+  padding-left: 10px;
+}
+
+.weather-forecast {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: white;
+  background-color: #003467;
+  margin-right: 2%;
+}
+
+.info {
+  font-size: 15px;
+}
+
+.forecast-date {
+  font-size: 30px;
+}
+
+.uv-green {
+  background-color: green;
+}
 @media screen and (max-width: 375px) {
   .search-bar {
     width: 100%;
+  }
+  .content-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .weather-forecast {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heading-name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .search-bar {
+    width: 100%;
+  }
+  .content-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .weather-forecast {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heading-name {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1284px) {
+  .search-bar {
+    width: 100%;
+  }
+  .content-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .weather-forecast {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heading-name {
+    text-align: center;
   }
 }
