@@ -63,6 +63,20 @@ header {
   background-color: thistle;
 }
 
+.former-search-btn {
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 100%;
+  color: white;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.former-search-btn:hover {
+  background-color: grey;
+}
 .current-weather {
   flex-grow: 1;
 }
@@ -71,18 +85,17 @@ header {
   background-color: lightskyblue;
   font-size: 25px;
   margin-top: 80px;
-  width: 90%;
-  padding-left: 10px;
+  width: 100%;
+  padding: 0 0 1px 10px;
 }
 
 .weather-forecast {
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 10px 10px;
   font-size: 20px;
   color: white;
   background-color: #003467;
-  margin-right: 2%;
+  margin-right: 10px;
 }
 
 .info {
@@ -93,8 +106,19 @@ header {
   font-size: 30px;
 }
 
-.uv-green {
-  background-color: green;
+.uv-safe {
+  background-color: #98fb98;
+  border-radius: 0.3rem;
+}
+
+.uv-warning {
+  background-color: #ffbf00;
+  border-radius: 0.3rem;
+}
+
+.uv-danger {
+  background-color: #c70012;
+  border-radius: 0.3rem;
 }
 @media screen and (max-width: 375px) {
   .search-bar {
